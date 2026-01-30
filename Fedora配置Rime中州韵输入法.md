@@ -15,7 +15,9 @@ sudo dnf install ibus-rime
 编辑`/etc/profile`（影响所有用户，需要`sudo`权限）或者`~/.xprofile`（仅影响当前用户）【如果使用`bash`作为默认`shell`，还可以编辑`~/.bash_profile`】，在文件新增：
 
 ```bash
-export XMODIFIERS=@im=ibusexport GTK_IM_MODULE=ibusexport QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
 ```
 
 ## 配置ibus-rime
@@ -43,7 +45,9 @@ sudo dnf install fcitx5-rime
 编辑`/etc/profile`（影响所有用户，需要`sudo`权限）或者`~/.xprofile`（仅影响当前用户）【如果使用`bash`作为默认`shell`，还可以编辑`~/.bash_profile`】，在文件新增：
 
 ```bash
-export XMODIFIERS=@im=fcitx5export GTK_IM_MODULE=fcitx5export QT_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx5
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
 ```
 
 ## 配置fcitx5-rime
@@ -90,7 +94,9 @@ git clone https://github.com/fkxxyz/rime-cloverpinyin.git .
 在使用过程中，出现`ibus`输入法的输入框严重偏移的问题，目前解决方案未知，但是，修改`/etc/profile`为：
 
 ```bash
-export XMODIFIERS=@im=ibusexport GTK_IM_MODULE=fcitxexport QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=ibus
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
 ```
 
 可以**部分**解决偏移的问题。
