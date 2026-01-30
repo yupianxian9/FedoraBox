@@ -81,17 +81,20 @@ flatpak uninstall cn.wps.Office
 flatpak uninstall --delete-data cn.wps.Office
 ```
 
-## 1. 日常软件安装
-
-## 1.1 brave浏览器
-
-描述：目前个人在Fedora体验最佳的浏览器
+## 0.3 锁定软件版本
 
 ```bash
-flatpak install flathub com.brave.Browser
+# 1先搜索确定软件包名
+rpm -qa | grep -i chrome
+
+sudo dnf install 'dnf-command(versionlock)'
+
+sudo dnf versionlock add chrome
 ```
 
-## 1.2 WPS Office
+## 1. 日常软件安装
+
+## 1.1 WPS Office
 
 描述：## WPS 365 Suite
 
