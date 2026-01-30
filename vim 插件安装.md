@@ -4,7 +4,6 @@ vim 下载：
 
 ```bash
 sudo dnf install vim
-sudo dnf install gvim
 ```
 
 在 `Vim` 中安装插件可以显著提升编辑效率，常见的插件管理器有 `Vim-plug`、`Pathogen` 和 `Vundle`。以下是使用 `Vim-plug` 安装插件的步骤和一些常用插件推荐。
