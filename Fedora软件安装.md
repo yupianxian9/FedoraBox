@@ -47,6 +47,9 @@ sudo dnf autoremove -y
 先配置镜像源
 
 ```bash
+# 配置flathub仓库
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 # 修改镜像源(中科大)
 sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub
 
