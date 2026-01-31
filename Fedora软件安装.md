@@ -160,4 +160,7 @@ sudo dnf install unrar
 ```
 # 解压到当前目录，x表示交互
 unrar x archive.rar
+
+# 解压到指定目录
+unrar x archive.rar -d /home/user/backup/
 ```
