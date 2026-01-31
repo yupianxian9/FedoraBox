@@ -147,3 +147,17 @@ flatpak install flathub com.github.tchx84.Flatseal
 ```bash
 flatpak install flathub org.localsend.localsend_app
 ```
+## 3.3 unrar
+
+描述：rar压缩包解压工具
+
+```bash
+sudo dnf install unrar
+```
+
+基本用法：
+
+```
+# 解压到当前目录，x表示交互
+unrar x archive.rar
+```
