@@ -105,6 +105,14 @@ sudo dnf versionlock add chrome
 flatpak install flathub cn.wps.wps_365
 ```
 
+## 1.2 mpv
+
+描述：音视频播放器
+
+```
+sudo dnf install mpv
+```
+
 ## 2. 编程相关软件安装
 
 ## 2.1 VS Code
